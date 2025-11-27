@@ -101,7 +101,7 @@ pip install triton-windows==3.1.0.post17
 
 ## Download necessory files
 #### sam-3d-objects/checkpoints
->#use huggingface to download or modescope to download
+>#use huggingface to download or modelscope to download
 #move all download files to sam-3d-objects\checkpoints\hf\
 
 
@@ -196,7 +196,7 @@ python show-ply.py
 
 ```mermaid
 graph TD
-    A[download checkpoints<br>huggingface/modescope] -->|copy/move| C
+    A[download checkpoints<br>huggingface/modelscope] -->|copy/move| C
     B[sam-3d-objects] --> C[checkpoints/hf/]    
     C --> D[pipline.yaml]
     C --> E[Model Weights<br>.ckpt/.pt]
