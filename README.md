@@ -189,7 +189,22 @@ pip install pyntcloud
 # modify ply file path in show-ply.py
 python show-ply.py
 ```
+
+# Model checkpoints
+```mermaid
+A[sam-3d-objects]-->B[checkpoints/hf/]
+B-->C[pipline.yaml]
+B-->D[Model Weights]
+```
+
+
+
+
+
 ***
+
+
+
 
 ## Problem
 #### Not Installed
