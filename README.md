@@ -38,13 +38,16 @@ pip install -r requirements.txt
 
 #### Install xformers
 ```bash
-pip install 
+pip install https://download.pytorch.org/whl/cu124/xformers-0.0.28.post3-cp311-cp311-win_amd64.whl#sha256=a0a7e437438de51bfcc1ebcb6f6167989e90d8b1d77a30b6fe4b21ce5b094a2e
 ```
 
 ```bash
 pip install cython requests zstandard open3d trimesh  seaborn 
 
-pip install "ipykernel==6.29.5"
+pip install "ipykernel==6.29.5" numpy== 1.26.4
+
+# or use this to install numpy
+# pip install "numpy<2.0"
 ```
 ```bash
 pip install kaolin==0.18.0 -f https://nvidia-kaolin.s3.us-east-2.amazonaws.com/torch-2.5.1_cu121.html
