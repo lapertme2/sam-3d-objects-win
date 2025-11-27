@@ -38,7 +38,7 @@ pip install -r requirements.txt
 
 #### Install xformers
 ```bash
-pip install https://download.pytorch.org/whl/cu124/xformers-0.0.28.post3-cp311-cp311-win_amd64.whl#sha256=a0a7e437438de51bfcc1ebcb6f6167989e90d8b1d77a30b6fe4b21ce5b094a2e
+pip install 
 ```
 
 ```bash
@@ -88,7 +88,7 @@ pip install mkl-service intel-openmp
 ```
 
 ```bash
-pip install "imageio==2.33" -i https://mirrors.aliyun.com/pypi/simple
+pip install "imageio==2.33"
 
 pip install triton-windows==3.1.0.post17
 ```
@@ -102,13 +102,15 @@ pip install triton-windows==3.1.0.post17
 #move all download files to sam-3d-objects\checkpoints\hf\
 
 
-#### Ruicheng/moge-vitl
+#### Ruicheng/moge-vitl：depth_model.model
 ```bash
 # Replace 'your_username' with your username
 # If "979e84da9415762c30e6c0cf8dc0962896c793df" is not in your directory,RUN demo first and replace with your directory path
 
-python demo.py
-
+# If error for downloading full_key: depth_model.model
+# Mannual download from huggingface
+https://huggingface.co/Ruicheng/moge-vitl/resolve/main/model.pt?download=true
+# move to
 C:\Users\your_username\.cache\huggingface\hub\models--Ruicheng--moge-vitl\snapshots\979e84da9415762c30e6c0cf8dc0962896c793df
 ```
 
