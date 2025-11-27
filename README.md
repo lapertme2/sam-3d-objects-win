@@ -127,7 +127,48 @@ https://codeload.github.com/facebookresearch/dinov2/zip/refs/heads/main
 C:\Users\your_username\\.cache\torch\hub\facebookresearch_dinov2_main
 ```
 
+#### modify notebook/inference.py like this
+```bash
 
+BLACKLIST_FILTERS = [
+    lambda target: get_method(target)
+    in {
+        builtins.exec,
+        builtins.eval,
+        builtins.__import__,
+        os.kill,
+        os.system,
+        os.putenv,
+        os.remove,
+        os.removedirs,
+        os.rmdir,
+        #os.fchdir,
+        #os.setuid,
+        #os.fork,
+        #os.forkpty,
+        #os.killpg,
+        os.rename,
+        os.renames,
+        os.truncate,
+        os.replace,
+        os.unlink,
+        #os.fchmod,
+        #os.fchown,
+        #os.chmod,
+        #os.chown,
+        #os.chroot,
+        #os.fchdir,
+        #os.lchown,
+        os.getcwd,
+        #os.chdir,
+        shutil.rmtree,
+        shutil.move,
+        shutil.chown,
+        subprocess.Popen,
+        builtins.help,
+    },
+]
+```
 
 
 ## RUN
