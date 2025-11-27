@@ -7,6 +7,11 @@
 - 内存：64GB
 - OS：Windows11
 
+## What hardware is required to run SAM 3D?
+- standard consumer GPUs (e.g., NVIDIA RTX 30 series or newer) with at least 8GB of VRAM. 
+- For training or fine-tuning, we recommend enterprise-grade GPUs like the A100.
+
+More:[SAM 3D](https://sam3d.org/)
 
 ## Install Environment
 
