@@ -193,9 +193,9 @@ python show-ply.py
 # Model checkpoints
 ```mermaid
 graph TD
-A[sam-3d-objects]-->B[checkpoints/hf/]
-B-->C[pipline.yaml]
-B-->D[Model Weights]
+    A[sam-3d-objects]-->B[checkpoints/hf/]
+    B-->C[pipline.yaml]
+    B-->D[Model Weights]
 ```
 
 
