@@ -28,8 +28,8 @@ full_key: depth_model.model
 HUGGINGFACE_HUB
 
 - Windows: C:\Users\your_username\.cache\huggingface\hub\
-- Linux: /home/your_username/.cache/huggingface/hub/
 
+# wait for modify local logic
 ```mermaid
 
 graph TD
