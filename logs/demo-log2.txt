@@ -1,0 +1,45 @@
+已连接到 pydev 调试器(内部版本号 252.27397.106)2025-11-28 22:18:15.156 | INFO     | sam3d_objects.pipeline.inference_pipeline:set_attention_backend:15 - GPU name is NVIDIA GeForce RTX 4090
+2025-11-28 22:18:17.310 | INFO     | sam3d_objects.model.backbone.tdfy_dit.modules.sparse:__from_env:39 - [SPARSE] Backend: spconv, Attention: sdpa
+2025-11-28 22:18:23.781 | INFO     | sam3d_objects.model.backbone.tdfy_dit.modules.attention:__from_env:30 - [ATTENTION] Using backend: sdpa
+[SPARSE][CONV] spconv algo: auto
+2025-11-28 22:18:24.147 | WARNING  | sam3d_objects.data.dataset.tdfy.preprocessor:__post_init__:51 - No rgb pointmap normalizer provided, using scale + shift 
+2025-11-28 22:18:24.147 | WARNING  | sam3d_objects.data.dataset.tdfy.preprocessor:__post_init__:51 - No rgb pointmap normalizer provided, using scale + shift 
+2025-11-28 22:18:24.239 | WARNING  | sam3d_objects.data.dataset.tdfy.preprocessor:__post_init__:51 - No rgb pointmap normalizer provided, using scale + shift 
+C:\Users\zjw\anaconda3\envs\sam3d\Lib\site-packages\moge\model\v1.py:171: UserWarning: The following deprecated/invalid arguments are ignored: {'output_mask': True, 'split_head': True}
+  warnings.warn(f"The following deprecated/invalid arguments are ignored: {deprecated_kwargs}")
+2025-11-28 22:18:28.339 | WARNING  | sam3d_objects.data.dataset.tdfy.preprocessor:__post_init__:51 - No rgb pointmap normalizer provided, using scale + shift 
+2025-11-28 22:18:28.342 | INFO     | sam3d_objects.pipeline.inference_pipeline:__init__:98 - self.device: cuda
+2025-11-28 22:18:28.342 | INFO     | sam3d_objects.pipeline.inference_pipeline:__init__:99 - CUDA_VISIBLE_DEVICES: None
+2025-11-28 22:18:28.342 | INFO     | sam3d_objects.pipeline.inference_pipeline:__init__:100 - Actually using GPU: 0
+2025-11-28 22:18:28.343 | INFO     | sam3d_objects.pipeline.inference_pipeline:init_pose_decoder:295 - Using pose decoder: ScaleShiftInvariant
+2025-11-28 22:18:28.343 | INFO     | sam3d_objects.pipeline.inference_pipeline:__init__:131 - Loading model weights...
+2025-11-28 22:18:28.585 | INFO     | sam3d_objects.model.io:load_model_from_checkpoint:158 - Loading checkpoint from checkpoints/hf\ss_generator.ckpt
+2025-11-28 22:18:31.945 | INFO     | sam3d_objects.model.io:load_model_from_checkpoint:158 - Loading checkpoint from checkpoints/hf\slat_generator.ckpt
+2025-11-28 22:18:33.899 | INFO     | sam3d_objects.model.io:load_model_from_checkpoint:158 - Loading checkpoint from checkpoints/hf\ss_decoder.ckpt
+2025-11-28 22:18:34.077 | INFO     | sam3d_objects.model.io:load_model_from_checkpoint:158 - Loading checkpoint from checkpoints/hf\slat_decoder_gs.ckpt
+2025-11-28 22:18:34.223 | INFO     | sam3d_objects.model.io:load_model_from_checkpoint:158 - Loading checkpoint from checkpoints/hf\slat_decoder_gs_4.ckpt
+2025-11-28 22:18:34.418 | INFO     | sam3d_objects.model.io:load_model_from_checkpoint:158 - Loading checkpoint from checkpoints/hf\slat_decoder_mesh.ckpt
+2025-11-28 22:18:34.894 | INFO     | sam3d_objects.model.backbone.dit.embedder.dino:__init__:31 - Loading DINO model: dinov2_vitl14_reg from facebookresearch/dinov2 (source: github)
+2025-11-28 22:18:37.006 | INFO     | sam3d_objects.model.backbone.dit.embedder.dino:__init__:44 - Loaded DINO model - type: <class 'dinov2.models.vision_transformer.DinoVisionTransformer'>, embed_dim: 1024, patch_size: (14, 14)
+2025-11-28 22:18:37.019 | INFO     | sam3d_objects.model.backbone.dit.embedder.dino:__init__:31 - Loading DINO model: dinov2_vitl14_reg from facebookresearch/dinov2 (source: github)
+2025-11-28 22:18:38.369 | INFO     | sam3d_objects.model.backbone.dit.embedder.dino:__init__:44 - Loaded DINO model - type: <class 'dinov2.models.vision_transformer.DinoVisionTransformer'>, embed_dim: 1024, patch_size: (14, 14)
+2025-11-28 22:18:38.414 | INFO     | sam3d_objects.model.io:load_model_from_checkpoint:158 - Loading checkpoint from checkpoints/hf\ss_generator.ckpt
+2025-11-28 22:18:41.255 | INFO     | sam3d_objects.model.backbone.dit.embedder.dino:__init__:31 - Loading DINO model: dinov2_vitl14_reg from facebookresearch/dinov2 (source: github)
+2025-11-28 22:18:43.074 | INFO     | sam3d_objects.model.backbone.dit.embedder.dino:__init__:44 - Loaded DINO model - type: <class 'dinov2.models.vision_transformer.DinoVisionTransformer'>, embed_dim: 1024, patch_size: (14, 14)
+2025-11-28 22:18:43.087 | INFO     | sam3d_objects.model.backbone.dit.embedder.dino:__init__:31 - Loading DINO model: dinov2_vitl14_reg from facebookresearch/dinov2 (source: github)
+2025-11-28 22:18:44.320 | INFO     | sam3d_objects.model.backbone.dit.embedder.dino:__init__:44 - Loaded DINO model - type: <class 'dinov2.models.vision_transformer.DinoVisionTransformer'>, embed_dim: 1024, patch_size: (14, 14)
+2025-11-28 22:18:44.336 | INFO     | sam3d_objects.model.io:load_model_from_checkpoint:158 - Loading checkpoint from checkpoints/hf\slat_generator.ckpt
+2025-11-28 22:18:46.911 | INFO     | sam3d_objects.pipeline.inference_pipeline:override_ss_generator_cfg_config:436 - ss_generator parameters: inference_steps=25, cfg_strength=7, cfg_interval=[0, 500], rescale_t=3, cfg_strength_pm=0.0
+2025-11-28 22:18:46.911 | INFO     | sam3d_objects.pipeline.inference_pipeline:override_slat_generator_cfg_config:458 - slat_generator parameters: inference_steps=25, cfg_strength=1, cfg_interval=[0, 500], rescale_t=1
+2025-11-28 22:18:46.911 | INFO     | sam3d_objects.pipeline.inference_pipeline:__init__:196 - Loading model weights completed!
+2025-11-28 22:18:50.183 | INFO     | sam3d_objects.pipeline.inference_pipeline:sample_sparse_structure:662 - Sampling sparse structure: inference_steps=25, strength=7, interval=[0, 500], rescale_t=3, cfg_strength_pm=0.0
+2025-11-28 22:18:50.184 | INFO     | sam3d_objects.pipeline.inference_pipeline:get_condition_input:631 - Running condition embedder ...
+2025-11-28 22:18:50.304 | INFO     | sam3d_objects.pipeline.inference_pipeline:get_condition_input:635 - Condition embedder finishes!
+2025-11-28 22:18:55.144 | INFO     | sam3d_objects.pipeline.inference_pipeline:sample_sparse_structure:712 - Downsampled coords from 26900 to 26340
+2025-11-28 22:18:55.163 | INFO     | sam3d_objects.pipeline.inference_pipeline_pointmap:run:368 - Rescaling scale by 1 after downsampling
+2025-11-28 22:18:55.164 | INFO     | sam3d_objects.pipeline.inference_pipeline:sample_slat:742 - Sampling sparse latent: inference_steps=25, strength=1, interval=[0, 500], rescale_t=1
+2025-11-28 22:18:55.164 | INFO     | sam3d_objects.pipeline.inference_pipeline:get_condition_input:631 - Running condition embedder ...
+2025-11-28 22:18:55.248 | INFO     | sam3d_objects.pipeline.inference_pipeline:get_condition_input:635 - Condition embedder finishes!
+2025-11-28 22:19:02.125 | INFO     | sam3d_objects.pipeline.inference_pipeline:decode_slat:604 - Decoding sparse latent...
+2025-11-28 22:19:21.802 | INFO     | sam3d_objects.pipeline.inference_pipeline:postprocess_slat_output:538 - Postprocessing mesh with option with_mesh_postprocess False, with_texture_baking False...
+2025-11-28 22:19:22.261 | INFO     | sam3d_objects.pipeline.inference_pipeline_pointmap:run:416 - Finished!
