@@ -65,6 +65,11 @@ pip install -e ".[dev]"
 
 #### Install pytorch3d 
 
+> install blender4.3.0 first,to avoid this error:
+>  from pytorch3d import _C
+ImportError: cannot import name '_C' from 'pytorch3d'
+
+
 ```bash
 pip install https://github.com/MiroPsota/torch_packages_builder/releases/download/pytorch3d-0.7.8%2B5043d15/pytorch3d-0.7.8%2B5043d15pt2.5.1cu121-cp311-cp311-win_amd64.whl
 ```
