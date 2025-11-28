@@ -117,9 +117,18 @@ pip install triton-windows==3.1.0.post17
 
 # If error for downloading full_key: depth_model.model
 # Mannual download from huggingface
-https://huggingface.co/Ruicheng/moge-vitl/resolve/main/model.pt?download=true
+#https://huggingface.co/Ruicheng/moge-vitl/resolve/main/model.pt?download=true
 # move to
-C:\Users\your_username\.cache\huggingface\hub\models--Ruicheng--moge-vitl\snapshots\979e84da9415762c30e6c0cf8dc0962896c793df
+#C:\Users\your_username\.cache\huggingface\hub\models--Ruicheng--moge-vitl\snapshots\979e84da9415762c30e6c0cf8dc0962896c793df
+
+# up methood necessary that you can connect to huggingface
+# use this methood,modify checkpointspoints/hf/pipeline.yaml and put model.pt to sam-3d-objects\checkpoints\hf
+# line 65 about moge-vitl
+# I tried it,but not add .pt file name   
+pretrained_model_name_or_path: checkpoints/hf/model.pt
+
+# you can rename model.pt to Ruicheng--moge-vitl-model.pt
+pretrained_model_name_or_path: checkpoints/hf/Ruicheng--moge-vitl-model.pt
 ```
 
 ## Others
