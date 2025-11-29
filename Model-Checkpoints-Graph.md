@@ -26,17 +26,31 @@ moge.model.v1.MoGeModel.from_pretrained
 full_key: depth_model.model
 
 HUGGINGFACE_HUB
-
 - Windows: C:\Users\your_username\.cache\huggingface\hub\
 
 # wait for modify local logic
+### cacheed model Weights
 ```mermaid
 
 graph TD
-    A[HUGGINGFACE_HUB]-->B[models--Ruicheng--moge-vitl/snapshots/]
+    A[HUGGINGFACE_HUB]-->|local cache|B[models--Ruicheng--moge-vitl/snapshots/]
     B-->C[like this:<br>979e84da9415762c30e6c0cf8dc<br>select to yourself]
-    C-->D[model.pt]
-        
+    C-->D[model.pt]     
+```
+### local model Weights
+you can set to yourself  path about model.pt
+```mermaid
+graph TD
+    A[sam-3d-objects]-->|local|B[checkpoints/hf/]
+    B-->C[pipeline.yaml]
+    C-->E[model.pt]    
+
+
+    C-->D[pretrained_model_name_or_path: Ruicheng/moge-vitl]
+    D -->|modify| F["pretrained_model_name_or_path: checkpoints/hf/model.pt"]
+
+
+      
 ```
 
 ***
@@ -44,7 +58,7 @@ graph TD
 
 TORCH_HUB
 - Windows: C:\Users\your_username\\.cache\torch\hub\
-- Linux: /home/your_username/.cache/torch/hub/
+
 >If error for downloading from github,do this. checkpoints will download auto
 
 
