@@ -76,6 +76,8 @@ pip install https://github.com/MiroPsota/torch_packages_builder/releases/downloa
 
 ```bash
 # Test pytorch3d
+python -c "from pytorch3d.renderer import look_at_view_transform; print('✅ pytorch3d')"
+
 python pulsar_multiview.py
 ```
 
@@ -128,7 +130,9 @@ pip install triton-windows==3.1.0.post17
 
 # up methood necessary that you can connect to huggingface
 # use this methood,modify checkpointspoints/hf/pipeline.yaml and put model.pt to sam-3d-objects\checkpoints\hf
-# line 65 about moge-vitl
+# line 65 about moge-vitl: pretrained_model_name_or_path: Ruicheng/moge-vitl
+
+
 # I tried it,but not add .pt file name   
 pretrained_model_name_or_path: checkpoints/hf/model.pt
 
@@ -148,6 +152,17 @@ https://codeload.github.com/facebookresearch/dinov2/zip/refs/heads/main
 #replace 'your_username' with your username
 C:\Users\your_username\\.cache\torch\hub\facebookresearch_dinov2_main
 ```
+
+
+#### Install flash_attn
+```bash
+pip install https://github.com/MiroPsota/torch_packages_builder/releases/download/flash_attn-2.8.3/flash_attn-2.8.3+pt2.5.0cu121-cp311-cp311-win_amd64.whl
+
+# Test
+python -c "from flash_attn import flash_attn_qkvpacked_func, flash_attn_func; print('✅ flash_attn')"
+```
+
+
 
 #### modify notebook/inference.py like this
 ```bash
@@ -193,7 +208,8 @@ BLACKLIST_FILTERS = [
 ```
 
 
-## Run demo.py 
+## Run demo.py index
+
 ```bash
 # In sam-3d-objects directory
 # Create 3D File
@@ -218,7 +234,7 @@ python show-ply.py
 
 ## Problem
 #### Not Installed
-- flash_attn==2.8.3
+- **~~flash_attn==2.8.3~~** 
 - nvidia-pyindex==1.0.9
 
 >wait for test and update
