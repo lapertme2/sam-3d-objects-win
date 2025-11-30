@@ -4,7 +4,7 @@
 - Python: 3.11.14
 - CUDA: 12.6
 - NVIDIA GPU: RTX 4090, 24GB
-- 内存：64GB
+- RAM：64GB
 - OS：Windows11
 
 ## What hardware is required to run SAM 3D?
