@@ -1,6 +1,13 @@
-import sys
-sys.path.append("notebook")
-from inference import Inference, ready_gaussian_for_video_rendering, render_video, load_image, load_single_mask, display_image, make_scene, interactive_visualizer
+import gradio as gr
+
+def interactive_visualizer(ply_path):
+    with gr.Blocks() as demo:
+        gr.Markdown("# 3D Gaussian Splatting (black-screen loading might take a while)")
+        gr.Model3D(
+            value=ply_path,  # splat file
+            label="3D Scene",
+        )
+    demo.launch(share=True)
 
 # might take a while to load (black screen)
-interactive_visualizer(f"splat.ply")
+interactive_visualizer(f"myimage.ply")
