@@ -10,4 +10,4 @@ def interactive_visualizer(ply_path):
     demo.launch(share=True)
 
 # might take a while to load (black screen)
-interactive_visualizer(f"myimage.ply")
+interactive_visualizer(f"splat.ply")
