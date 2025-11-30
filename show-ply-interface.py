@@ -7,7 +7,7 @@ def interactive_visualizer(ply_path):
             value=ply_path,  # splat file
             label="3D Scene",
         )
-    demo.launch(share=True)
+    demo.launch(share=False)
 
 # might take a while to load (black screen)
 interactive_visualizer(f"splat.ply")
