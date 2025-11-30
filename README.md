@@ -13,6 +13,12 @@
 
 More:[SAM 3D](https://sam3d.org/)
 
+|FileFile|Method|Display|
+|--|--|--|
+|show-ply|Open3D|![alt text](assets/README/image.png)|
+|show-ply-interface|Gradio|![alt text](assets/README/image-1.png)|
+
+
 ## Install Environment
 
 #### Clone sam-3d-objects
