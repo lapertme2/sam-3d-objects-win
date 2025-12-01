@@ -49,14 +49,14 @@ pip install . --no-build-isolation
 
 #### Run 
 ```bash
-# Add conda env 'sam3d' to jupyter kernel
-python -m ipykernel install --user --name=sam3d
+# Add conda env 'sam-3d' to jupyter kernel
+python -m ipykernel install --user --name=sam-3d
 
-# jupyter kernelspec uninstall sam3d
+# jupyter kernelspec uninstall sam-3d
 
 # sam-3d-objects
 jupyter notebook notebook/demo_single_object.ipynb
-# Select Kernel sam3d
+# Select Kernel sam-3d
 ```
 
 
