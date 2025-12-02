@@ -61,7 +61,7 @@ pip install "ipykernel==6.29.5" numpy== 1.26.4
 # pip install "numpy<2.0"
 ```
 ```bash
-pip install kaolin==0.18.0 -f https://nvidia-kaolin.s3.us-east-2.amazonaws.com/torch-2.5.1_cu121.html
+pip install kaolin==0.18.0 -f https://nvidia-kaolin.s3.us-east-2.amazonaws.com/torch-2.5.1_cu121/kaolin-0.18.0-cp311-cp311-win_amd64.whl
 ```
 
 ```bash
