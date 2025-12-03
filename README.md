@@ -109,7 +109,7 @@ pip install mkl-service intel-openmp
 ```
 
 ```bash
-pip install "imageio==2.33"
+pip install imageio==2.33
 
 pip install triton-windows==3.1.0.post17
 ```
